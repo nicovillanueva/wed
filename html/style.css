@@ -1,0 +1,377 @@
+
+*{
+  font-family: 'Nanum Gothic', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #363636;
+}
+
+header{
+  background: #424242;
+  margin: 0;
+  height: 200px;
+  /* overflow: hidden; */
+}
+
+h1, h2 {
+  font-weight: lighter;
+  text-align: center;
+  width: 100%;
+}
+
+h1{
+  width: 100%;
+  height: 100%;
+  padding-top:0.2em;
+  font-size: 11.5em;
+  line-height: .6em;
+  color:#363636;
+  box-sizing: border-box;
+}
+
+h2{
+  font-size: 5em;
+  color: #a09f9f;
+  position: relative;
+  top: -113px;
+}
+
+ul {
+  list-style: none;
+}
+
+
+.countdown {
+  background-image: url("assets/love.jpeg");
+  background-blend-mode: lighten;
+  background-color: #363636;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.countdown .countdownList{
+  padding: 3em 0em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+  font-size: 1.5em;
+}
+
+.countdown .countdownList .countdownItem {
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown .countdownList .countdownItem span{
+  font-size: 10em;
+  color:rgba(192,192,192,0.5);
+}
+
+.info .infoList{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: baseline;
+  font-size: 2em;
+  color: #fcf4de;
+  width: 70%;
+  margin: .8em auto;
+  border-left: 1px solid rgba(192,192,192,0.5);
+}
+
+.info .infoList .infoItem {
+    padding-left: 1em;
+}
+
+.info .infoList .infoItem a {
+  text-decoration: none;
+  color: #8239F7;
+}
+
+.info .infoList .infoItem:nth-of-type(3){
+  font-size: .7em;
+  padding-left: 1.5em;
+  padding-top: 0.5em;
+}
+
+@media (min-width:1000px) and (max-width: 1290px) {
+
+    header{
+      height: 150px;
+    }
+
+    h1{
+      font-size: 9em;
+    }
+
+    h2{
+      font-size: 4em;
+      top: -85px;
+    }
+
+    .countdown .countdownList{
+      font-size: 1.4em;
+    }
+
+    .countdown .countdownList .countdownItem span{
+      font-size: 9em;
+    }
+
+    .info .infoList{
+      font-size: 1.8em;
+    }
+
+    .info .infoList .infoItem:nth-of-type(3){
+      font-size: .6em;
+      padding-left: 1.8em;
+    }
+}
+
+@media (min-width:800px) and (max-width: 999px) {
+
+    header{
+      height: 110px;
+    }
+
+    h1{
+      font-size: 7em;
+    }
+
+    h2{
+      font-size: 3.4em;
+      top: -64px;
+    }
+
+    .countdown {
+      background-image: url("assets/loveMob.jpg");
+    }
+
+    .countdown .countdownList{
+      padding: 0em 0em 2em;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      max-width: 330px;
+      margin: auto;
+    }
+
+    .countdown .countdownList .countdownItem span{
+      font-size: 12em;
+    }
+
+    .info .infoList{
+      font-size: 3em;
+      width: 80%;
+    }
+
+    .info .infoList .infoItem:nth-of-type(3){
+      font-size: .8em;
+      padding-left: 1.3em;
+    }
+
+}
+
+@media (min-width:420px) and (max-width: 799px) {
+
+    header{
+      height: 100px;
+      padding-top:0.3em;
+    }
+
+    h1{
+      font-size: 6em;
+    }
+
+    h2{
+      font-size: 2em;
+      top: -45px;
+    }
+
+    .countdown {
+      background-image: url("assets/loveMob.jpg");
+    }
+
+    .countdown .countdownList{
+      padding: 3em 0em;
+      font-size: 1em;
+    }
+
+    .countdown .countdownList{
+      padding: 0em 0em 2em;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      max-width: 330px;
+      margin: auto;
+    }
+
+    .countdown .countdownList .countdownItem span{
+      font-size: 10em;
+    }
+
+    .info .infoList{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: baseline;
+      color: #fcf4de;
+      margin: .8em auto;
+      border-left: 1px solid rgba(192,192,192,0.5);
+      font-size: 2.5em;
+      width: 70%;
+      padding: 1em 0em;
+    }
+
+    .info .infoList .infoItem {
+        padding-left: 1em;
+    }
+
+    .info .infoList .infoItem:nth-of-type(3){
+      font-size: .7em;
+      padding-left: 1.4em;
+      padding-top: 0.5em;
+    }
+
+}
+
+@media (min-width:650px) and (max-width: 720px) {
+    h1{
+      font-size: 5.5em;
+      padding-top:0.3em;
+    }
+
+    h2{
+      font-size: 1.9em;
+      top: -44px;
+    }
+}
+
+@media (min-width:600px) and (max-width: 649px) {
+
+    header{
+      height: 90px;
+    }
+
+    h1{
+      font-size: 5.3em;
+      padding-top:0.3em;
+    }
+
+    h2{
+      font-size: 1.9em;
+      top: -37px;
+    }
+}
+
+@media (min-width:550px) and (max-width: 599px) {
+
+    header{
+      height: 90px;
+    }
+
+    h1{
+      font-size: 4.9em;
+      padding-top:0.3em;
+    }
+
+    h2{
+      font-size: 1.9em;
+      top: -43px;
+    }
+}
+
+@media (min-width:500px) and (max-width: 549px) {
+
+    header{
+      height: 80px;
+    }
+
+    h1{
+      font-size: 4.4em;
+      padding-top:0.3em;
+    }
+
+    h2{
+      font-size: 1.9em;
+      top: -41px;
+    }
+}
+
+@media (min-width:420px) and (max-width: 499px) {
+
+    header{
+      height: 80px;
+    }
+
+    h1{
+      font-size: 4em;
+      padding-top:0.3em;
+    }
+
+    h2{
+      font-size: 1.9em;
+      top: -47px;
+    }
+
+}
+
+@media (max-width: 419px) {
+
+    header{
+      height: 60px;
+    }
+
+    h1{
+      font-size: 3em;
+      padding-top:0.3em;
+    }
+
+    h2{
+      font-size: 1.9em;
+      top: -42px;
+    }
+
+    .countdown {
+      background-image: url("assets/loveMob.jpg");
+    }
+
+    .countdown .countdownList{
+      padding: 0em 0em 2em;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      max-width: 330px;
+      margin: auto;
+    }
+
+    .countdown .countdownList .countdownItem span{
+      font-size: 10em;
+    }
+
+    .info .infoList{
+      font-size: 1.5em;
+      width: 70%;
+      padding: 1em 0em;
+    }
+
+    .info .infoList .infoItem {
+        padding-left: 1em;
+    }
+
+    .info .infoList .infoItem:nth-of-type(3){
+      font-size: .7em;
+      padding-left: 1.4em;
+      padding-top: 0.5em;
+    }
+
+}
