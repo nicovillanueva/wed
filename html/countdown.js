@@ -25,12 +25,14 @@ const countDownClock = (number = 100, format = 'seconds') => {
   function timer(seconds) {
     const now = Date.now();
     const then = 1527602400000;// 14:00 del 29 de mayo del 2018
+    // const then = 1526830891000;
 
     countdown = setInterval(() => {
       const secondsLeft = Math.round((then - Date.now()) / 1000);
 
       if(secondsLeft <= 0) {
         clearInterval(countdown);
+        window.location.replace("/live");
         return;
       };
 
